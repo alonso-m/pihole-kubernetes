@@ -1,0 +1,19 @@
+apiVersion: v1                                                                                                                                          
+kind: PersistentVolume                                                                                                                                  
+metadata:                                                                                                                                               
+  namespace: pihole
+  name: pihole-pv                                                                                                                                       
+  labels:                                                                                                                                               
+    app: pihole                                                                                                                                         
+spec:                                                                                                                                                   
+  storageClassName: manual                                                                                                                              
+  capacity:                                                                                                                                             
+    storage: 500Mi                                                                                                                                      
+  accessModes:                                                                                                                                          
+    - ReadWriteOnce                                                                                                                                     
+  mountOptions:                                                                                                                                         
+    - lookupcache=pos                                                                                                                                   
+    - noatime                                                                                                                                           
+  nfs:                                                                                                                                                  
+    path: /zfs/application-data/pihole
+    server: node06                                                                                                                                      
