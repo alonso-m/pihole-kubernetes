@@ -1,0 +1,3 @@
+[submodule "pihole-kubernetes"]
+	path = pihole-kubernetes
+	url = https://github.com/MoJo2600/pihole-kubernetes.git
