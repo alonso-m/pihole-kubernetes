@@ -16,4 +16,4 @@ spec:
     - noatime                                                                                                                                           
   nfs:                                                                                                                                                  
     path: /zfs/application-data/pihole
-    server: node06                                                                                                                                      
+    server: node05                                                                                                                                      
