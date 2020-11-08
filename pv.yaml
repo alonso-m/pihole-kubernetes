@@ -15,5 +15,5 @@ spec:
     - lookupcache=pos                                                                                                                                   
     - noatime                                                                                                                                           
   nfs:                                                                                                                                                  
-    path: /zfs/application-data/pihole
-    server: node05                                                                                                                                      
+    path: /zfs/encrypted/application-data/pihole
+    server: node00                                                                                                                                      

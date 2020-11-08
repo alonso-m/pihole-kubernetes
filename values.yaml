@@ -66,7 +66,7 @@ resources: {}
 
 persistentVolumeClaim:
   # set to true to use pvc
-  enabled: true
+  enabled: false
   # set to true to use you own pvc
   existingClaim: pihole-pvc
   annotations: {}
@@ -82,7 +82,8 @@ persistentVolumeClaim:
   ##
   # storageClass: "-"
 
-nodeSelector: {}
+nodeSelector:
+  #  k3s.io/hostname: "node05"
 
 tolerations: []
 
@@ -155,4 +156,4 @@ regex: {}
 webHttp: "80"
 webHttps: "443"
 hostNetwork: "false"
-privileged: "false"
+privileged: "true"
