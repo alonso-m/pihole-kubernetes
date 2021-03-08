@@ -140,9 +140,9 @@ adlists: {}
   # - https://hosts-file.net/grm.txt
   # - https://reddestdream.github.io/Projects/MinimalHosts/etc/MinimalHostsBlocker/minimalhosts
 
-whitelist: {}
+whitelist: 
   # If you want to provide whitelisted domains, add them here.
-  # - clients4.google.com
+  - s.click.aliexpress.com
 
 blacklist: {}
   # If you want to have special domains blacklisted, add them here
